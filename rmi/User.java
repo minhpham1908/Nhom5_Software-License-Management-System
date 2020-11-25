@@ -1,7 +1,9 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class User {
+public class User implements Serializable{
+    private static final long serialVersionUID = 227L;
     private String name;
     private ArrayList<LicenceData> licences;
 

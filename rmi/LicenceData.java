@@ -1,8 +1,10 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Objects;
 
-public class LicenceData{
+public class LicenceData implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String licenceID;
     private Date validThough;
     private ArrayList<String> productName;

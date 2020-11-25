@@ -1,12 +1,17 @@
+import java.io.Serializable;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.Date;
 
 /**
  * LicenceServiceImp
  */
-public class LicenceServiceImp implements LicenceService {
+public class LicenceServiceImp extends UnicastRemoteObject implements LicenceService {
+    private static final long serialVersionUID = 1L;
 
-    public LicenceServiceImp() {
+    public LicenceServiceImp() throws RemoteException {
+        super();
     }
     
     @Override
