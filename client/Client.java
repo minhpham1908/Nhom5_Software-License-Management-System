@@ -8,14 +8,18 @@ public class Client {
     private static final int PORT = 1234;
     private static Registry registry;
 
-    public static void main(String[] args) throws RemoteException, NotBoundException {
-        System.out.println("This is client");
+    public Client() throws RemoteException, NotBoundException {
         registry = LocateRegistry.getRegistry(HOST, PORT);
         System.out.println("Got registry");
         LicenceService service = (LicenceService) registry.lookup(LicenceService.class.getSimpleName());
-
+        System.out.println("get service success");
         User user = new User();
         LicenceData licence = service.getLicence(user);
         System.out.println(licence);
+    }
+
+    public static void main(String[] args) throws RemoteException, NotBoundException {
+        System.out.println("This is client");
+        new Client();
     }
 }
