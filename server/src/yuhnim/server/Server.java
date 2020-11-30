@@ -1,3 +1,7 @@
+package yuhnim.server;
+
+import yuhnim.rmi.LicenceService;
+
 import java.rmi.AccessException;
 import java.rmi.AlreadyBoundException;
 import java.rmi.Remote;
@@ -29,6 +33,6 @@ public class Server extends UnicastRemoteObject {
     public static void main(String[] args) throws RemoteException, AlreadyBoundException {
         System.out.println("SERVER STARTING...");
         new Server();
-        System.out.println("Server is running");
+        System.out.println("yuhnim.server.Server is running");
     }
 }
