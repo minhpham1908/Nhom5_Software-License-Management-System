@@ -1,3 +1,9 @@
+package yuhnim.server;
+
+import yuhnim.rmi.LicenceData;
+import yuhnim.rmi.LicenceService;
+import yuhnim.rmi.User;
+
 import java.io.Serializable;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -5,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * LicenceServiceImp
+ * yuhnim.server.LicenceServiceImp
  */
 public class LicenceServiceImp extends UnicastRemoteObject implements LicenceService {
     private static final long serialVersionUID = 1L;

@@ -1,3 +1,9 @@
+package yuhnim.client;
+
+import yuhnim.rmi.LicenceData;
+import yuhnim.rmi.LicenceService;
+import yuhnim.rmi.User;
+
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
