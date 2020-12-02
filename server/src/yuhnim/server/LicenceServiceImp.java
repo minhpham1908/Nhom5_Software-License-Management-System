@@ -22,12 +22,12 @@ public class LicenceServiceImp extends UnicastRemoteObject implements LicenceSer
     
     @Override
     public LicenceData getLicence(User user) {
-        Date now =  new Date();
+        Date now = new Date();
         ArrayList<String> products = new ArrayList<String>();
         products.add("some product");
-        LicenceData licenceData = new LicenceData("1234AD",now , products);
+        LicenceData licenceData = new LicenceData("1234AD", now, products);
         return licenceData;
     }
-    
-    
+
+
 }
