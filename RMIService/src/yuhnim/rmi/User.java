@@ -6,13 +6,14 @@ import java.util.Objects;
 
 public class User implements Serializable{
     private static final long serialVersionUID = 227L;
+    private String ID;
     private String name;
-    private ArrayList<LicenceData> licences;
+    private ArrayList<Licence> licences;
 
     public User() {
     }
 
-    public User(String name, ArrayList<LicenceData> licences) {
+    public User(String name, ArrayList<Licence> licences) {
         this.name = name;
         this.licences = licences;
     }
@@ -25,11 +26,11 @@ public class User implements Serializable{
         this.name = name;
     }
 
-    public ArrayList<LicenceData> getLicences() {
+    public ArrayList<Licence> getLicences() {
         return this.licences;
     }
 
-    public void setLicences(ArrayList<LicenceData> licences) {
+    public void setLicences(ArrayList<Licence> licences) {
         this.licences = licences;
     }
 
@@ -38,7 +39,7 @@ public class User implements Serializable{
         return this;
     }
 
-    public User licences(ArrayList<LicenceData> licences) {
+    public User licences(ArrayList<Licence> licences) {
         this.licences = licences;
         return this;
     }
