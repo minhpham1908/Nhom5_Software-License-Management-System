@@ -66,6 +66,4 @@ public class LicenceServiceImp extends UnicastRemoteObject implements LicenceSer
         }
         return conn;
     }
-    
-    
 }
