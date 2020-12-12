@@ -5,19 +5,23 @@ import java.util.Objects;
 
 public class Product implements Serializable {
     private static final long serialVersionUID = 1L;
-    private String ID;
+    private Integer ID;
     private String name;
 
-    public Product(String ID, String name) {
+    public Product(Integer ID, String name) {
         this.ID = ID;
         this.name = name;
     }
 
-    public String getID() {
+    public Product() {
+
+    }
+
+    public Integer getID() {
         return ID;
     }
 
-    public void setID(String ID) {
+    public void setID(int ID) {
         this.ID = ID;
     }
 

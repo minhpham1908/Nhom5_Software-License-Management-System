@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class User implements Serializable{
     private static final long serialVersionUID = 227L;
-    private String ID;
+    private Integer ID;
     private String name;
     private ArrayList<Licence> licences;
 
@@ -16,6 +16,18 @@ public class User implements Serializable{
     public User(String name, ArrayList<Licence> licences) {
         this.name = name;
         this.licences = licences;
+    }
+
+    public User(Integer userId) {
+        this.ID = userId;
+    }
+
+    public Integer getID() {
+        return ID;
+    }
+
+    public void setID(Integer ID) {
+        this.ID = ID;
     }
 
     public String getName() {
@@ -62,7 +74,10 @@ public class User implements Serializable{
 
     @Override
     public String toString() {
-        return "{" + " name='" + getName() + "'" + ", licences='" + getLicences() + "'" + "}";
+        return "User{" +
+                "ID=" + ID +
+                ", name='" + name + '\'' +
+                ", licences=" + licences +
+                '}';
     }
-
 }

@@ -7,7 +7,7 @@ import java.util.Objects;
 
 public class Licence implements Serializable {
     private static final long serialVersionUID = 1L;
-    private String licenceID;
+    private Integer licenceID;
     private String title;
     private Date validThough;
     private ArrayList<Product> products;
@@ -15,7 +15,7 @@ public class Licence implements Serializable {
     public Licence() {
     }
 
-    public Licence(String licenceID, Date validThough, ArrayList<Product> products) {
+    public Licence(Integer licenceID, Date validThough, ArrayList<Product> products) {
         this.licenceID = licenceID;
         this.validThough = validThough;
         this.products = products;
@@ -29,11 +29,11 @@ public class Licence implements Serializable {
         this.title = title;
     }
 
-    public String getLicenceID() {
+    public Integer getLicenceID() {
         return this.licenceID;
     }
 
-    public void setLicenceID(String licenceID) {
+    public void setLicenceID(Integer licenceID) {
         this.licenceID = licenceID;
     }
 
@@ -53,7 +53,7 @@ public class Licence implements Serializable {
         this.products = products;
     }
 
-    public Licence licenceID(String licenceID) {
+    public Licence licenceID(Integer licenceID) {
         this.licenceID = licenceID;
         return this;
     }
