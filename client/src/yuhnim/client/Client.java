@@ -1,6 +1,6 @@
 package yuhnim.client;
 
-import yuhnim.rmi.LicenceData;
+import yuhnim.rmi.Licence;
 import yuhnim.rmi.LicenceService;
 import yuhnim.rmi.User;
 
@@ -8,6 +8,7 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.util.List;
 
 public class Client {
     private static final String HOST = "localhost";
@@ -19,9 +20,9 @@ public class Client {
         System.out.println("Got registry");
         LicenceService service = (LicenceService) registry.lookup(LicenceService.class.getSimpleName());
         System.out.println("get service success");
-        User user = new User();
-        LicenceData licence = service.getLicence(user);
-        System.out.println(licence);
+        User user = new User(0);
+        List<Licence> licences = service.getLicences(user);
+        System.out.println(licences);
     }
 
     public static void main(String[] args) throws RemoteException, NotBoundException {
