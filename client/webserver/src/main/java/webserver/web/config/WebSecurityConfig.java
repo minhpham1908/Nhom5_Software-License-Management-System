@@ -21,36 +21,28 @@ import org.springframework.security.web.authentication.logout.LogoutSuccessHandl
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .csrf().disable()
-                .authorizeRequests()
-                .antMatchers("/admin/**").hasRole("ADMIN")
-                .antMatchers("/", "/login*").permitAll()
-                .anyRequest().fullyAuthenticated()
-                .and()
-                .formLogin().loginPage("/login").permitAll()
+        http.csrf().disable();
+        http.authorizeRequests().antMatchers("/admin/**").hasRole("ADMIN");
+        http.authorizeRequests().antMatchers("/", "/login*", "/logout").permitAll();
+        http.authorizeRequests().anyRequest().fullyAuthenticated();
+        http.authorizeRequests().and()
+                .formLogin()
+                .loginPage("/login").permitAll()
                 .loginProcessingUrl("/perform_login")
                 .defaultSuccessUrl("/licenceInfo", true)
                 .failureUrl("/login?error=true")
-//                .failureHandler(authenticationFailureHandler())
+                .usernameParameter("username")
+                .passwordParameter("password")
                 .and()
                 .logout().permitAll()
                 .logoutUrl("perform_logout")
                 .deleteCookies("JSESSIONID")
-//                .logoutSuccessHandler(logoutSuccessHandler())
         ;
-    }
-
-    private LogoutSuccessHandler logoutSuccessHandler() {
-        return null;
-    }
-
-    private AuthenticationFailureHandler authenticationFailureHandler() {
-        return null;
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+
         auth.inMemoryAuthentication()
                 .withUser("user1").password(passwordEncoder().encode("user1pass")).roles("USER")
                 .and()
