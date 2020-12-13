@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="https://www.thymeleaf.org">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JetBrains Account</title>
-    <link rel="stylesheet" href="./bootstrap-full.css">
+    <link rel="stylesheet" th:href="@{/css/bootstrap-full.css}" href="../public/css/bootstrap-full.css">
 </head>
 
 <body>
 <div class="footer-wrap">
-    <div class="header"></div>
+    <div class="header">
+
+    </div>
     <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1 th:inline="text">[[${#httpServletRequest.remoteUser}]]</h1>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="float-right">
+                    <button type="button" class="btn btn-danger float-right" onclick="">Log out</button>
+                </div>
+            </div>
+        </div>
         <div class="row">
 
             <div>
-                <h1 style="display: inline-block;">1 License</h1>
+                <h1 style="display: inline-block;" th:text="${numOfLicences}+ ' Licences'">X License</h1>
                 <span class="unit-container-sm"></span>
                 <span style="display: inline-block;"></span>
             </div>
