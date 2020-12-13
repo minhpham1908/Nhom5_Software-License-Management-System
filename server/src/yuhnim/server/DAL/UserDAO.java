@@ -43,4 +43,9 @@ public class UserDAO implements DAO<User> {
     public Integer delete(User user) {
         return null;
     }
+
+    public User findUser(String username){
+        User user = new User();
+        return user;
+    }
 }

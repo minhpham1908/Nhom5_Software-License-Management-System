@@ -18,15 +18,20 @@ public class Client {
     public Client() throws RemoteException, NotBoundException {
         registry = LocateRegistry.getRegistry(HOST, PORT);
         System.out.println("Got registry");
+    }
+
+    public List<Licence> getLicences() throws RemoteException, NotBoundException {
         LicenceService service = (LicenceService) registry.lookup(LicenceService.class.getSimpleName());
         System.out.println("get service success");
         User user = new User(0);
         List<Licence> licences = service.getLicences(user);
-        System.out.println(licences);
+        return licences;
     }
 
     public static void main(String[] args) throws RemoteException, NotBoundException {
         System.out.println("This is client");
-        new Client();
+        Client client =new Client();
+        System.out.println(client.getLicences());
+
     }
 }
