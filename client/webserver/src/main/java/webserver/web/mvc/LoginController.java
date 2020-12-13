@@ -1,4 +1,4 @@
-package webserver.web;
+package webserver.web.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,8 +12,9 @@ public class LoginController {
     }
 
     @GetMapping("/perform_login")
-    public String processLogin(Model model){
-        System.out.println(model);
+    public String processLogin(Model model, String username, String password){
+        System.out.println(username);
+        System.out.println(password);
         return "index";
     }
 
