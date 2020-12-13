@@ -58,7 +58,7 @@ public class LicenceDAO implements DAO<Licence> {
     }
 
     public static void main(String[] args) {
-        LicenceDAO licenceDAO = new LicenceDAO();
+        DAO licenceDAO = new LicenceDAO();
         ArrayList<Licence> licences= licenceDAO.getAll(0);
         System.out.println(licences);
     }

@@ -3,6 +3,7 @@ package yuhnim.server;
 import yuhnim.rmi.Licence;
 import yuhnim.rmi.LicenceService;
 import yuhnim.rmi.User;
+import yuhnim.server.DAL.DAO;
 import yuhnim.server.DAL.LicenceDAO;
 
 import java.rmi.RemoteException;
@@ -23,8 +24,9 @@ public class LicenceServiceImp extends UnicastRemoteObject implements LicenceSer
 
     @Override
     public ArrayList<Licence> getLicences(User user) {
-        LicenceDAO licenceDAO = null;
+        DAO licenceDAO = new LicenceDAO();
         ArrayList<Licence> licences = licenceDAO.getAll(user.getID());
+        // Get products of that each licence
         return licences;
     }
 
