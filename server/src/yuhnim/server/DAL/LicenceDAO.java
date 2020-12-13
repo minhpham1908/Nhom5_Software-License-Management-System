@@ -3,7 +3,6 @@ package yuhnim.server.DAL;
 import yuhnim.rmi.Licence;
 import yuhnim.server.ConnectionFactory;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;

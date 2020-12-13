@@ -20,7 +20,7 @@ public class ProductDAO implements DAO<Product> {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(
                     "SELECT * FROM licence_for_product AS lfp, product " +
-                            "where lfp.Product_i = product.Product_id " +
+                            "where lfp.Product_id = product.Product_id " +
                             "and lfp.Licence_id=" + licenceId);
             while (resultSet.next()) {
                 Product product = new Product();
