@@ -109,6 +109,53 @@
                 </div>
             </div>
 
+            <th:block th:each="licence : ${licences}">
+                <div class="well">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="well-header">
+                                <div class="title" th:text="${licence.title} + ' licence'">Licence title <small></small>
+                                </div>
+                                <div class="license-id">
+                                    License ID:
+                                    <div class="id" th:text="${licence.licenceID}">Licence ID ...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="well-row">
+                                <div class="well-label">Licensed to:</div>
+                                <div class="well-value"><strong class="registration-name">Minh Pham</strong></div>
+                            </div>
+                            <div class="well-row">
+                                <div class="well-label">License restriction:</div>
+                                <div class="well-value">For educational use only</div>
+                            </div>
+                            <div class="well-row">
+                                <div class="well-label">Valid through:</div>
+                                <div class="well-value" th:text="${licence.validThough}">September&nbsp;27,&nbsp;2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            Following products included:
+                            <div class="product-list">
+                                <div class="row">
+                                    <th:block th:each="product : ${licence.productName}">
+                                        <div th:text="${product.name}" class="cell"></div>
+                                    </th:block>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </th:block>
 
         </div>
     </div>
