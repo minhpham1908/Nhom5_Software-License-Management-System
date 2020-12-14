@@ -9,5 +9,5 @@ import java.util.List;
  * yuhnim.rmi.LicenceService
  */
 public interface LicenceService extends Remote {
-    public ArrayList<Licence> getLicences(User user) throws RemoteException;
+    ArrayList<Licence> getLicences(Integer userId) throws RemoteException;
 }
