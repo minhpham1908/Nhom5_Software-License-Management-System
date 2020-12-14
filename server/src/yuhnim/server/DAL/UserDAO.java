@@ -16,13 +16,32 @@ public class UserDAO implements DAO<User> {
         return null;
     }
 
+    public User get(String username) {
+        Connection connection = ConnectionFactory.getConnection();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM user WHERE User_name= '" + username + "'");
+            while (resultSet.next()) {
+                User user = new User();
+                user.setName(resultSet.getString("User_name"));
+                user.setID(resultSet.getInt("User_id"));
+                user.setEncryptedPassword(resultSet.getString("Encrypted_password"));
+                return user;
+
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return null;
+    }
+
     @Override
     public User get(Integer id) {
         Connection connection = ConnectionFactory.getConnection();
         try {
-        Statement statement = connection.createStatement();
+            Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM user where user.User_id=" + id);
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 User user = new User();
                 user.setName(resultSet.getString("User_name"));
                 user.setID(resultSet.getInt("User_id"));
@@ -44,8 +63,5 @@ public class UserDAO implements DAO<User> {
         return null;
     }
 
-    public User findUser(String username){
-        User user = new User();
-        return user;
-    }
+
 }
