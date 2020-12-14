@@ -17,6 +17,14 @@ public class Product implements Serializable {
 
     }
 
+    public Product(Integer ID){
+        this.ID = ID;
+    }
+
+    public Product(String name){
+        this.name = name;
+    }
+
     public Integer getID() {
         return ID;
     }
@@ -32,6 +40,13 @@ public class Product implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setIDAndName(int ID, String name){
+        this.ID = ID;
+        this.name = name;
+    }
+
+    
 
     @Override
     public boolean equals(Object o) {
