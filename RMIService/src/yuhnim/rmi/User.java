@@ -8,6 +8,7 @@ public class User implements Serializable{
     private static final long serialVersionUID = 227L;
     private Integer ID;
     private String name;
+    private String encryptedPassword;
     private ArrayList<Licence> licences;
 
     public User() {
@@ -20,6 +21,14 @@ public class User implements Serializable{
 
     public User(Integer userId) {
         this.ID = userId;
+    }
+
+    public String getEncryptedPassword() {
+        return encryptedPassword;
+    }
+
+    public void setEncryptedPassword(String encryptedPassword) {
+        this.encryptedPassword = encryptedPassword;
     }
 
     public Integer getID() {
@@ -77,6 +86,7 @@ public class User implements Serializable{
         return "User{" +
                 "ID=" + ID +
                 ", name='" + name + '\'' +
+                ", encryptedPassword='" + encryptedPassword + '\'' +
                 ", licences=" + licences +
                 '}';
     }
