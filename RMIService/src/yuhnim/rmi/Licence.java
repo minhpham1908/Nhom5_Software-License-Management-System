@@ -21,6 +21,7 @@ public class Licence implements Serializable {
         this.products = products;
     }
 
+
     public String getTitle() {
         return title;
     }
@@ -62,6 +63,41 @@ public class Licence implements Serializable {
         this.validThough = validThough;
         return this;
     }
+
+    //Add More
+
+    public void setTitleAndlicenceID(String title, Integer licenceID){
+        // Gan gia tri Title
+        // Title co gia tri mac dinh la string
+        this.title = title;
+
+        // Gan gia tri licenceID
+        // licenceID co gia tri mac dinh la integer
+        this.licenceID = licenceID;
+    }
+
+    public void setValidThoughAndProductName(Date validThough, ArrayList<Product> products){
+        // Gan gia tri cho validThogh
+        // validThough co kieu du lieu mac dinh la Date
+        this.validThough = validThough;
+
+        // Gan gia tri cho products
+        // products co gia tri mac dinh la mot mang bao gom list cac product
+        this.products = products;
+    }
+
+    public Licence(Integer licenceID, Date validThough) {
+        //Khoi tao cho Licence
+        //
+        //Khoi tao gia tri mac dinh cho licenceID
+        // Kieu du lieu Integer
+        this.licenceID = licenceID;
+
+        //Khoi tao gia tri mac dinh cho validThough
+        // Kieu du lieu Data
+        this.validThough = validThough;
+    }
+
 
     @Override
     public boolean equals(Object o) {
