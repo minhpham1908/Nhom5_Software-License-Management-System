@@ -21,6 +21,7 @@ public class Licence implements Serializable {
         this.products = products;
     }
 
+
     public String getTitle() {
         return title;
     }
@@ -83,6 +84,18 @@ public class Licence implements Serializable {
         // Gan gia tri cho products
         // products co gia tri mac dinh la mot mang bao gom list cac product
         this.products = products;
+    }
+
+    public Licence(Integer licenceID, Date validThough) {
+        //Khoi tao cho Licence
+        //
+        //Khoi tao gia tri mac dinh cho licenceID
+        // Kieu du lieu Integer
+        this.licenceID = licenceID;
+
+        //Khoi tao gia tri mac dinh cho validThough
+        // Kieu du lieu Data
+        this.validThough = validThough;
     }
 
 
