@@ -24,9 +24,9 @@ public class LicenceServiceImp extends UnicastRemoteObject implements LicenceSer
     }
 
     @Override
-    public ArrayList<Licence> getLicences(User user) {
+    public ArrayList<Licence> getLicences(Integer userId) {
         DAO licenceDAO = new LicenceDAO();
-        ArrayList<Licence> licences = licenceDAO.getAll(user.getID());
+        ArrayList<Licence> licences = licenceDAO.getAll(userId);
         // Get products of that each licence
         DAO producDao = new ProductDAO();
         for (Licence licence : licences) {
@@ -39,7 +39,8 @@ public class LicenceServiceImp extends UnicastRemoteObject implements LicenceSer
     public static void main(String[] args) throws RemoteException {
         LicenceService licenceServiceTest = new LicenceServiceImp();
         User user = new User(0);
-        ArrayList<Licence> licences = licenceServiceTest.getLicences(user);
+        Integer userId = 2;
+        ArrayList<Licence> licences = licenceServiceTest.getLicences(userId);
         for (Licence licence : licences) {
             System.out.println(licence);
         }
