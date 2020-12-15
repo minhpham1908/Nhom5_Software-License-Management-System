@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="webserver:jar" />
+      <artifact name="server:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,18 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98b6f109-673d-42f5-a08b-66108a7242a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webserver_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/Licence.java" beforeDir="false" afterPath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/model/Licence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/LicenceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/service/LicenceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/RMIService/src/yuhnim/rmi/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/yuhnim/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/yuhnim/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/webserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/model/MyUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/WebApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/mvc/LicenceInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/mvc/LicenceInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/webserver/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webserver/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/slms.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/server/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/ConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/DAL/LicenceDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/DAL/LicenceDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/DAL/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/DAL/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/DAL/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/DAL/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/LicenceServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/LicenceServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/UserServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,14 +81,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/out/artifacts/client_jar/client.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/webserver/src/main/resources/META-INF" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.16370809" />
+    <property name="project.structure.proportion" value="0.16765286" />
     <property name="project.structure.side.proportion" value="0.34666666" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -137,18 +148,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.WebApplication" />
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.WebApplication" />
       <item itemvalue="JAR Application.server.jar" />
       <item itemvalue="JAR Application.webserver.jar" />
       <item itemvalue="JAR Application.webserver.jar (1)" />
+      <item itemvalue="Spring Boot.WebApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JAR Application.webserver.jar (1)" />
-        <item itemvalue="JAR Application.webserver.jar" />
         <item itemvalue="JAR Application.server.jar" />
+        <item itemvalue="JAR Application.webserver.jar" />
         <item itemvalue="Application.WebApplication" />
         <item itemvalue="Application.Server" />
       </list>
@@ -188,6 +199,8 @@
       <workItem from="1608020994369" duration="1710000" />
       <workItem from="1608022730982" duration="619000" />
       <workItem from="1608023397745" duration="4094000" />
+      <workItem from="1608039989246" duration="4981000" />
+      <workItem from="1608048184750" duration="3836000" />
     </task>
     <servers />
   </component>
