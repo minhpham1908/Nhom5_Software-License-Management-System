@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="webserver:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98b6f109-673d-42f5-a08b-66108a7242a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/client/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/yuhnim/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/yuhnim/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/model/MyUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/WebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/mvc/LicenceInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/mvc/LicenceInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webserver/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/webserver/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/DAL/LicenceDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/DAL/LicenceDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/yuhnim/server/LicenceServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/yuhnim/server/LicenceServiceImp.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="7f5d537f-c76d-4bd6-a85c-f67ecfa64146" value="Rose" />
+    </colors>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1l6AUIV1ZDvDgfw0CkWwHEo8Ij1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/out/artifacts/client_jar/client.jar" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.16370809" />
+    <property name="project.structure.side.proportion" value="0.34666666" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\Software-Licence-Management-System\client\webserver\src\main\resources\public\css" />
+      <recent name="D:\IdeaProjects\Software-Licence-Management-System\client\webserver\src\main\resources\static\css" />
+      <recent name="D:\IdeaProjects\Software-Licence-Management-System\client\webserver\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JAR Application.webserver.jar (1)">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="yuhnim.server.Server" />
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="yuhnim.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webserver.web.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="server.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/server/out/artifacts/server_jar/server.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="webserver.jar (1)" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/client/out/artifacts/webserver_jar/webserver.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="webserver.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/webserver_jar/webserver.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="webserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="webserver.web.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.WebApplication" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.WebApplication" />
+      <item itemvalue="JAR Application.server.jar" />
+      <item itemvalue="JAR Application.webserver.jar" />
+      <item itemvalue="JAR Application.webserver.jar (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.webserver.jar (1)" />
+        <item itemvalue="JAR Application.webserver.jar" />
+        <item itemvalue="JAR Application.server.jar" />
+        <item itemvalue="Application.WebApplication" />
+        <item itemvalue="Application.Server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98b6f109-673d-42f5-a08b-66108a7242a1" name="Default Changelist" comment="" />
+      <created>1606907190318</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606907190318</updated>
+      <workItem from="1606907193793" duration="17000" />
+      <workItem from="1606909090786" duration="1659000" />
+      <workItem from="1606910878319" duration="2346000" />
+      <workItem from="1607047529622" duration="2730000" />
+      <workItem from="1607337067896" duration="97000" />
+      <workItem from="1607337552312" duration="235000" />
+      <workItem from="1607404529336" duration="962000" />
+      <workItem from="1607440559838" duration="2312000" />
+      <workItem from="1607442949274" duration="1811000" />
+      <workItem from="1607491116975" duration="6769000" />
+      <workItem from="1607502889317" duration="3197000" />
+      <workItem from="1607698583623" duration="1602000" />
+      <workItem from="1607702541302" duration="708000" />
+      <workItem from="1607755088850" duration="2748000" />
+      <workItem from="1607780151254" duration="5297000" />
+      <workItem from="1607789663012" duration="5046000" />
+      <workItem from="1607830011396" duration="8504000" />
+      <workItem from="1607869239568" duration="10295000" />
+      <workItem from="1607933076348" duration="602000" />
+      <workItem from="1607936498786" duration="3988000" />
+      <workItem from="1607947828382" duration="2954000" />
+      <workItem from="1607954819995" duration="12393000" />
+      <workItem from="1608018059204" duration="2867000" />
+      <workItem from="1608020994369" duration="1710000" />
+      <workItem from="1608022730982" duration="619000" />
+      <workItem from="1608023397745" duration="4094000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/client/webserver/src/main/java/webserver/web/mvc/LicenceInfoController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((UsernamePasswordAuthenticationToken) principal).principal" language="JAVA" custom="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
