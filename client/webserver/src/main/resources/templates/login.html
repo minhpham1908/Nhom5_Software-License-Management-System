@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
 <head>
     <title>Spring Security Example </title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-full.css}" href="../public/css/bootstrap-full.css">
 </head>
+
 <body>
-<div th:if="${param.error}">
-    Invalid username and password.
-</div>
-<div th:if="${param.logout}">
-    You have been logged out.
-</div>
-<form th:action="@{/perform_login}" method="post">
-    <div><label> User Name : <input type="text" name="username"/> </label></div>
-    <div><label> Password: <input type="password" name="password"/> </label></div>
-    <div><input type="submit" value="Sign In"/></div>
-</form>
+    <div class="invalid-noti" th:if="${param.error}">
+        Invalid username and password.
+    </div>
+    <div th:if="${param.logout}">
+        You have been logged out.
+    </div>
+    <div class="login-page">
+        <h1 style="text-align: center;">Login</h1>
+        <div class="form">
+            <form th:action="@{/perform_login}" method="post">
+                <!-- <div><label> User Name : <input type="text" name="username" placeholder="Ex: luongpitch"/> </label></div>
+    <div><label> Password: <input type="password" name="password" placeholder="********"/> </label></div>
+    <div><input type="submit" value="Sign In"/></div> -->
+                <input type="text" placeholder="Username , ex: luongpitch" />
+                <input type="password" placeholder="Password" />
+                <input class="sign-in-btn" style="background-color:  #00ac4d;" type="submit" value="Sign In" />
+            </form>
+        </div>
+    </div>
+
+    <!-- luong form  -->
+    <!-- <div class="login-page">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" placeholder="name"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="email address"/>
+        <button>create</button>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+      </form>
+      <form class="login-form">
+        <input type="text" placeholder="username"/>
+        <input type="password" placeholder="password"/>
+        <button>login</button>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+      </form>
+    </div>
+  </div> -->
 </body>
+
 </html>
