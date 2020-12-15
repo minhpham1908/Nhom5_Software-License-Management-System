@@ -13,12 +13,12 @@
 
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <h1 th:inline="text">[[${#httpServletRequest.remoteUser}]]</h1>
+        <div class="row" >
+            <div class="col-sm-8" style="margin-left: -16px;">
+                <h1  th:inline="text">[[${#httpServletRequest.remoteUser}]]</h1>
             </div>
             <div class="col-sm-4 d-flex justify-content-center">
-                <div class="float-right">
+                <div class="float-right" style="float: right">
                     <form action="/logout" th:method="post">
 
                     <button type="submit" class="btn btn-danger float-right">Log out</button>
