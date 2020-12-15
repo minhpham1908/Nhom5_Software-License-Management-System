@@ -1,6 +1,6 @@
 package yuhnim.server.DAL;
 
-import yuhnim.rmi.Licence;
+import yuhnim.rmi.model.Licence;
 import yuhnim.server.ConnectionFactory;
 
 import java.sql.Connection;
@@ -8,7 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.List;
 
 public class LicenceDAO implements DAO<Licence> {
     /**
@@ -54,11 +53,5 @@ public class LicenceDAO implements DAO<Licence> {
     @Override
     public Integer delete(Licence licence) {
         return null;
-    }
-
-    public static void main(String[] args) {
-        DAO licenceDAO = new LicenceDAO();
-        ArrayList<Licence> licences= licenceDAO.getAll(0);
-        System.out.println(licences);
     }
 }

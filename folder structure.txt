@@ -1,0 +1,108 @@
+Folder PATH listing for volume Another
+Volume serial number is 6E99-6860
+D:.
+|   .gitignore
+|   Dockerfile
+|   folder structure.txt
+|   mysql-connector-java-8.0.22.jar
+|   README.md
+|   Software-Licence-Management-System.iml
+|   
++---.idea //ide config
+|           
++---client
+|   |   client.iml
+|   |   Dockerfile
+|   |               
+|   +---src
+|   |   +---META-INF
+|   |   |       MANIFEST.MF
+|   |   |       
+|   |   \---yuhnim
+|   |       \---client
+|   |               Client.java
+|   |               
+|   \---webserver
+|       |   .gitignore
+|       |   folder structure.txt
+|       |   HELP.md
+|       |   mvnw
+|       |   mvnw.cmd
+|       |   pom.xml
+|       |   webserver.iml
+|       |   
+|       +---.mvn
+|       |           
+|       +---src
+|          +---main
+|              +---java
+|              |   \---webserver
+|              |       \---web
+|              |           |   WebApplication.java
+|              |           |   
+|              |           +---config
+|              |           |       MvcConfig.java
+|              |           |       WebSecurityConfig.java
+|              |           |       
+|              |           +---model
+|              |           |       MyUserDetails.java
+|              |           |       
+|              |           +---mvc
+|              |           |       LicenceInfoController.java
+|              |           |       LoginController.java
+|              |           |       
+|              |           \---service
+|              |                   UserService.java
+|              |                   
+|              \---resources
+|                  |   application.properties
+|                  |   
+|                  +---META-INF
+|                  |       MANIFEST.MF
+|                  |       
+|                  +---public
+|                  |   \---css
+|                  |           bootstrap-full.css
+|                  |           
+|                  +---static
+|                  |   \---css
+|                  \---templates
+|                          index.html
+|                          LicenceInfo.html
+|                          login.html
+|
++---RMIService
+|   |   RMIService.iml
+|   |   
+|   \---src
+|       \---yuhnim
+|           \---rmi
+|               |   
+|               +---model
+|               |       Licence.java
+|               |       Product.java
+|               |       User.java
+|               \---service
+|                       LicenceService.java
+|                       UserService.java
+|
+\---server
+    |   Dockerfile
+    |   server.iml
+    |           
+    \---src
+        +---META-INF
+        |       MANIFEST.MF
+        |       
+        \---yuhnim
+            \---server
+                |   ConnectionFactory.java
+                |   LicenceServiceImp.java
+                |   Server.java
+                |   UserServiceImp.java
+                |   
+                \---DAL
+                        DAO.java
+                        LicenceDAO.java
+                        ProductDAO.java
+                        UserDAO.java

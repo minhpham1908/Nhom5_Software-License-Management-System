@@ -1,6 +1,7 @@
 package yuhnim.server;
 
-import yuhnim.rmi.LicenceService;
+import yuhnim.rmi.service.LicenceService;
+import yuhnim.rmi.service.UserService;
 
 import java.rmi.AccessException;
 import java.rmi.AlreadyBoundException;
@@ -18,6 +19,7 @@ public class Server extends UnicastRemoteObject {
     protected Server() throws RemoteException, AlreadyBoundException {
         startRegistry();
         registerService(LicenceService.class.getSimpleName(), new LicenceServiceImp());
+        registerService(UserService.class.getSimpleName(), new UserServiceImp());
     }
 
     public static void startRegistry() throws RemoteException {

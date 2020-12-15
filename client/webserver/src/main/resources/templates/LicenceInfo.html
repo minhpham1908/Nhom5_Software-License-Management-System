@@ -19,14 +19,17 @@
             </div>
             <div class="col-sm-4 d-flex justify-content-center">
                 <div class="float-right">
-                    <button type="button" class="btn btn-danger float-right" onclick="">Log out</button>
+                    <form action="/logout" th:method="post">
+
+                    <button type="submit" class="btn btn-danger float-right">Log out</button>
+                    </form>
                 </div>
             </div>
         </div>
         <div class="row">
 
             <div>
-                <h1 style="display: inline-block;" th:text="${numOfLicences}+ ' Licences'">X License</h1>
+                <h1 style="display: inline-block;" th:text="${numOfLicences} + ' Licences'">X License</h1>
                 <span class="unit-container-sm"></span>
                 <span style="display: inline-block;"></span>
             </div>
