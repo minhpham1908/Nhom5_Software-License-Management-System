@@ -56,6 +56,8 @@ public class User implements Serializable{
         return this;
     }
 
+
+
     @Override
     public boolean equals(Object o) {
         if (o == this)
@@ -80,4 +82,16 @@ public class User implements Serializable{
                 ", licences=" + licences +
                 '}';
     }
+
+    //Add more
+    public boolean equals_user(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof User)) {
+            return false;
+        }
+        User User = (User) o;
+        return Objects.equals(name, User.name) && Objects.equals(licences, User.licences);
+    }
+    
 }
