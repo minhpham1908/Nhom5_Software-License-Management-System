@@ -93,5 +93,13 @@ public class User implements Serializable{
         User User = (User) o;
         return Objects.equals(name, User.name) && Objects.equals(licences, User.licences);
     }
+
+    public String toStringLicences() {
+        return "User{" +
+                "ID=" + ID +
+                ", name='" + name + '\'' +
+                ", licences=" + licences +
+                '}';
+    }
     
 }
