@@ -1,9 +1,9 @@
 package yuhnim.client;
 
-import yuhnim.rmi.Licence;
-import yuhnim.rmi.LicenceService;
-import yuhnim.rmi.User;
-import yuhnim.rmi.UserService;
+import yuhnim.rmi.model.Licence;
+import yuhnim.rmi.service.LicenceService;
+import yuhnim.rmi.model.User;
+import yuhnim.rmi.service.UserService;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -12,7 +12,7 @@ import java.rmi.registry.Registry;
 import java.util.List;
 
 public class Client {
-    private static final String HOST = "localhost";
+    private static final String HOST = "running-server";
     private static final int PORT = 1234;
     private static Registry registry;
     private User user;

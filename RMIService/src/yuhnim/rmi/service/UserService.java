@@ -1,4 +1,6 @@
-package yuhnim.rmi;
+package yuhnim.rmi.service;
+
+import yuhnim.rmi.model.User;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

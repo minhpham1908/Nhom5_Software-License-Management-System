@@ -1,8 +1,7 @@
 package yuhnim.server;
 
-import yuhnim.rmi.User;
-import yuhnim.rmi.UserService;
-import yuhnim.server.DAL.DAO;
+import yuhnim.rmi.model.User;
+import yuhnim.rmi.service.UserService;
 import yuhnim.server.DAL.UserDAO;
 
 import java.rmi.RemoteException;

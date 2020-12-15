@@ -1,9 +1,8 @@
 package yuhnim.server;
 
-import yuhnim.rmi.Licence;
-import yuhnim.rmi.LicenceService;
-import yuhnim.rmi.Product;
-import yuhnim.rmi.User;
+import yuhnim.rmi.model.Licence;
+import yuhnim.rmi.service.LicenceService;
+import yuhnim.rmi.model.Product;
 import yuhnim.server.DAL.DAO;
 import yuhnim.server.DAL.LicenceDAO;
 import yuhnim.server.DAL.ProductDAO;
@@ -11,7 +10,6 @@ import yuhnim.server.DAL.ProductDAO;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * yuhnim.server.LicenceServiceImp
