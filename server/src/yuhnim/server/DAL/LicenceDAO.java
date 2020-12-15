@@ -55,10 +55,4 @@ public class LicenceDAO implements DAO<Licence> {
     public Integer delete(Licence licence) {
         return null;
     }
-
-    public static void main(String[] args) {
-        DAO licenceDAO = new LicenceDAO();
-        ArrayList<Licence> licences= licenceDAO.getAll(0);
-        System.out.println(licences);
-    }
 }

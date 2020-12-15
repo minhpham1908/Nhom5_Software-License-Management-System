@@ -35,15 +35,4 @@ public class LicenceServiceImp extends UnicastRemoteObject implements LicenceSer
         }
         return licences;
     }
-
-    public static void main(String[] args) throws RemoteException {
-        LicenceService licenceServiceTest = new LicenceServiceImp();
-        User user = new User(0);
-        Integer userId = 2;
-        ArrayList<Licence> licences = licenceServiceTest.getLicences(userId);
-        for (Licence licence : licences) {
-            System.out.println(licence);
-        }
-    }
-
 }

@@ -17,8 +17,4 @@ public class ConnectionFactory {
             throw new RuntimeException("connect failure!", ex);
         }
     }
-
-    public static void main(String[] args) {
-        Connection connection = ConnectionFactory.getConnection();
-    }
 }

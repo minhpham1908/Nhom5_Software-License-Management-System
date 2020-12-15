@@ -1,4 +1,4 @@
-package webserver.web;
+package webserver.web.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;

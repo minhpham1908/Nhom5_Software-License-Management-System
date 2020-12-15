@@ -9,7 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import org.springframework.util.Assert;
-import webserver.web.MyUserDetails;
+import webserver.web.model.MyUserDetails;
 import yuhnim.client.Client;
 import yuhnim.rmi.User;
 
