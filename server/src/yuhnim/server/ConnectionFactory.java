@@ -1,14 +1,13 @@
 package yuhnim.server;
 
 import java.sql.Connection;
-import java.sql.Driver;
 import java.sql.DriverManager;
 
 public class ConnectionFactory {
-    private static String DB_URL = "jdbc:mysql://localhost:3306/software-licence";
-    private static String DB_DOCKER_URL = "jdbc:mysql://host.docker.internal:3306/software-licence";
-    private static String USER_NAME = "root";
-    private static String PASSWORD = "madafakas";
+//    private static final String DB_URL = "jdbc:mysql://localhost:3306/software-licence";
+    private static final String DB_DOCKER_URL = "jdbc:mysql://host.docker.internal:3306/software-licence";
+    private static final String USER_NAME = "root";
+    private static final String PASSWORD = "madafakas";
 
     public static Connection getConnection() {
         try {

@@ -3,7 +3,6 @@ package yuhnim.server;
 import yuhnim.rmi.model.Licence;
 import yuhnim.rmi.service.LicenceService;
 import yuhnim.rmi.model.Product;
-import yuhnim.server.DAL.DAO;
 import yuhnim.server.DAL.LicenceDAO;
 import yuhnim.server.DAL.ProductDAO;
 
@@ -23,12 +22,12 @@ public class LicenceServiceImp extends UnicastRemoteObject implements LicenceSer
 
     @Override
     public ArrayList<Licence> getLicences(Integer userId) {
-        DAO licenceDAO = new LicenceDAO();
+        LicenceDAO licenceDAO = new LicenceDAO();
         ArrayList<Licence> licences = licenceDAO.getAll(userId);
         // Get products of that each licence
-        DAO producDao = new ProductDAO();
+        ProductDAO productDao = new ProductDAO();
         for (Licence licence : licences) {
-            ArrayList<Product> products = producDao.getAll(licence.getLicenceID());
+            ArrayList<Product> products = productDao.getAll(licence.getLicenceID());
             licence.setProductName(products);
         }
         return licences;
