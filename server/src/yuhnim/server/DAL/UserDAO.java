@@ -1,6 +1,6 @@
 package yuhnim.server.DAL;
 
-import yuhnim.rmi.User;
+import yuhnim.rmi.model.User;
 import yuhnim.server.ConnectionFactory;
 
 import java.sql.Connection;
@@ -8,7 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.List;
 
 public class UserDAO implements DAO<User> {
     @Override

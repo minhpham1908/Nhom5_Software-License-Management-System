@@ -8,7 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import webserver.web.model.MyUserDetails;
 import yuhnim.client.Client;
-import yuhnim.rmi.Licence;
+import yuhnim.rmi.model.Licence;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;

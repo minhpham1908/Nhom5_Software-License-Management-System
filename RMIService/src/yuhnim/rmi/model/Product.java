@@ -1,4 +1,4 @@
-package yuhnim.rmi;
+package yuhnim.rmi.model;
 
 import java.io.Serializable;
 import java.util.Objects;

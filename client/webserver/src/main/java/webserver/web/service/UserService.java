@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import webserver.web.model.MyUserDetails;
 import yuhnim.client.Client;
-import yuhnim.rmi.User;
+import yuhnim.rmi.model.User;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;

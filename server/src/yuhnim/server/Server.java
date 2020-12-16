@@ -1,7 +1,7 @@
 package yuhnim.server;
 
-import yuhnim.rmi.LicenceService;
-import yuhnim.rmi.UserService;
+import yuhnim.rmi.service.LicenceService;
+import yuhnim.rmi.service.UserService;
 
 import java.rmi.AccessException;
 import java.rmi.AlreadyBoundException;

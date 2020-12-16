@@ -1,32 +1,6 @@
-# Nhom5_Software-License-Management-System
-
-## My team
-
-- Minh <-- Me
-- Phùng văn Hoàng
-- Trần văn Lượng
-- Lê văn Quang
-## Description
-Server có nhiệm vụ lưu trữ thông tin về các giấy phép sử dụng các phần mềm của người dùng cụ thể.
-
-### Sever
-
-Server kết nối đến 1 database lưu trữ thông tin, cung cấp các hàm cho Client thông qua RMI của Java
-
-### Client
-
-Client gọi các hàm từ Server thông qua RMI
-
-### RMIService
-
-Định nghĩa các interface cho các service để triển khai qua RMI.
-
-Định nghĩa các model lưu thông tin Server trả về cho Client
-
-## What are those ?
-
-```
-/Root Project Folder/
+Folder PATH listing for volume Another
+Volume serial number is 6E99-6860
+D:.
 |   .gitignore
 |   Dockerfile
 |   folder structure.txt
@@ -132,54 +106,3 @@ Client gọi các hàm từ Server thông qua RMI
                         LicenceDAO.java
                         ProductDAO.java
                         UserDAO.java
-```
-
-
-
-
-## How to build this
-
-Clone project này về
-
-Mở project trong intellij
-
-## Test
-
-### Tạo 1 network cho 2 container connect
-
-docker network create RMInetwork
-
-### Build server docker image
-
-Mở teminal trong thư mục chứa project, chạy:
-
-```bash
-docker build --tag yuhnim/server:1.0 ./server
-```
-
-### Build client docker image
-
-Mở teminal trong thư mục chứa project, chạy:
-
-```bash
-docker build --tag yuhnim/client:1.0 ./client
-```
-
-### Run client images
-
-```bash
-docker run -d -p 8080:8080 --network RMInetwork --name running-client yuhnim/client:1.0
-```
-
-### Run server images
-
-```bash
-docker run -d -p 1234:1234 --network RMInetwork --name running-server yuhnim/server:1.0
-```
-
-
-
-## Licence
-
-None
-
