@@ -30,9 +30,6 @@ public class UserService implements UserDetailsService {
 //        UserBuilder builder = null;
         try {
             user = findUserByUserName(username);
-//            builder = org.springframework.security.core.userdetails.User.withUsername(user.getName());
-//            builder.password(user.getEncryptedPassword());
-//            builder.roles("USER");
             System.out.println(user);
         } catch (RemoteException e) {
             System.out.println("REMOTE EXCEPTION: " + e.toString());
@@ -41,8 +38,7 @@ public class UserService implements UserDetailsService {
             System.out.println("NOT BOUND EXCEPTION: " + e.toString());
             e.printStackTrace();
         }
-        MyUserDetails myUserDetails = new MyUserDetails(user.getID(), user.getName(), user.getEncryptedPassword(), new ArrayList(dumbGetRoles("USER")));
-        return myUserDetails;
+        return new MyUserDetails(user.getID(), user.getName(), user.getEncryptedPassword(), new ArrayList(dumbGetRoles("USER")));
     }
 
     private User findUserByUserName(String userName) throws RemoteException, NotBoundException {

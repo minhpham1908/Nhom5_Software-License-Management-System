@@ -11,11 +11,11 @@ public class LoginController {
         return "login";
     }
 
-    @GetMapping("/perform_login")
-    public String processLogin(Model model, String username, String password){
-        System.out.println(username);
-        System.out.println(password);
-        return "index";
-    }
+//    @GetMapping("/perform_login")
+//    public String processLogin(Model model, String username, String password){
+//        System.out.println(username);
+//        System.out.println(password);
+//        return "index";
+//    }
 
 }
